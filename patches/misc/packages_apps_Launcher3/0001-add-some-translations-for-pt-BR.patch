@@ -1,0 +1,328 @@
+From d5eaf5d1dfaf2a029c06b13d452f2476c83bf63f Mon Sep 17 00:00:00 2001
+From: TheAtt1la <alittauwu@gmail.com>
+Date: Sat, 25 Feb 2023 21:57:11 -0300
+Subject: [PATCH] add some translations for pt-BR
+
+---
+ res/values-pt-rBR/banana_strings.xml | 309 +++++++++++++++++++++++++++
+ 1 file changed, 309 insertions(+)
+ create mode 100644 res/values-pt-rBR/banana_strings.xml
+
+diff --git a/res/values-pt-rBR/banana_strings.xml b/res/values-pt-rBR/banana_strings.xml
+new file mode 100644
+index 0000000..55335d2
+--- /dev/null
++++ b/res/values-pt-rBR/banana_strings.xml
+@@ -0,0 +1,309 @@
++<?xml version="1.0" encoding="utf-8"?>
++<!--
++     Copyright (C) 2022 BananaDroid
++     SPDX-License-Identifier: Apache-2.0
++-->
++<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
++    <!-- Application name -->
++    <string name="custom_app_name" translatable="false">Banana Home</string>
++
++    <!-- Folder titles -->
++    <string name="google_folder_title" translatable="false">Google</string>
++
++    <!-- General -->
++    <string name="settings_title">Configurações iniciais</string>
++
++    <!-- Categories -->
++    <string name="home_category_title">Tela inicial</string>
++    <string name="home_category_summary">Defina o painel do Google agora e muito mais</string>
++    <string name="icons_category_title">Ícones</string>
++    <string name="icons_category_summary">Definir o tamanho do ícone e muito mais</string>
++    <string name="app_drawer_category_title">Gaveta de aplicativos</string>
++    <string name="app_drawer_category_summary">Personalize sua gaveta de aplicativos</string>
++    <string name="recents_category_title">Recentes</string>
++    <string name="recents_category_summary">Configurações iniciais</string>
++    <string name="misc_category_title">Tela inicial</string>
++    <string name="misc_category_summary">Outras opções</string>
++    <string name="general_category_title">General</string>
++    <string name="interface_category_title">Interface</string>
++    <string name="search_bar_category_title">Barra de pesquisa</string>
++    <string name="actions_category_title">Ações rápidas</string>
++    <string name="quickspace_category_title">Configurações iniciais</string>
++
++    <!-- Developer options -->
++    <string name="dev_options_title">Opções de desenvolvedor</string>
++    <string name="dev_options_summary">Habilite alguns recursos ocultos por sua conta e risco</string>
++
++    <!-- Edit workspace -->
++    <string name="settings_lock_layout_title">Bloquear layout</string>
++    <string name="settings_lock_layout_summary_on">Ícones e widgets não podem ser adicionados, removidos e movidos na tela inicial</string>
++    <string name="settings_lock_layout_summary_off">Ícones e widgets podem ser adicionados, removidos e movidos na tela inicial</string>
++    <string name="settings_edit_widgets_error">Não é possível adicionar widgets à tela inicial</string>
++
++    <!-- Hide labels -->
++    <string name="desktop_show_labels">Rótulos de ícone na área de trabalho</string>
++    <string name="drawer_show_labels">Rótulos de ícones na gaveta</string>
++
++    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
++    <string name="title_show_google_app">Não é possível adicionar widgets à tela inicial</string>
++    <string name="pref_show_google_now_summary" translatable="false">@string/msg_minus_one_on_left</string>
++    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
++    <string name="msg_minus_one_on_left">Quando você desliza para a direita na tela inicial principal</string>
++    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
++    <string name="msg_minus_one_on_right">Quando você desliza para a esquerda na tela inicial principal</string>
++
++    <!-- Trust apps -->
++    <string name="trust_apps_manager_name">Aplicativos ocultos e protegidos</string>
++    <string name="trust_apps_auth_manager">Desbloqueie para gerenciar os aplicativos ocultos e protegidos</string>
++    <string name="trust_apps_auth_open_app">Autenticar para abrir %1$s</string>
++    <string name="trust_apps_loading">Carregando\u2026</string>
++    <string name="trust_apps_no_lock_error">Configure uma tela de bloqueio segura para restringir o acesso ao aplicativo</string>
++    <string name="trust_apps_help">Ajuda</string>
++    <string name="trust_apps_info_hidden">Aplicativos ocultos e seus widgets estão ocultos na gaveta</string>
++    <string name="trust_apps_info_protected">Aplicativos protegidos exigem autenticação para serem abertos no iniciador</string>
++
++    <!-- DT2S -->
++    <string name="pref_sleep_gesture_title">Toque duas vezes para dormir</string>
++    <string name="pref_sleep_gesture_summary">Toque duas vezes no espaço vazio para desligar a tela</string>
++
++    <!-- Pause apps shortcut -->
++    <string name="pause">Pausar</string>
++    <string name="pause_apps_dialog_title">Pausar %1$s?</string>
++    <string name="pause_apps_dialog_message">As notificações para %1$s serão pausadas</string>
++    <string name="paused_apps_dialog_title">Aplicativo pausado</string>
++    <string name="paused_apps_dialog_message">%1$s foi pausado diretamente do iniciador</string>
++    <string name="paused_apps_drop_target_label">Pausar aplicativo</string>
++
++    <!-- Custom seekbar -->
++    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
++    <string name="custom_seekbar_default_value">Padrão</string>
++    <string name="custom_seekbar_default_value_to_set">Valor padrão: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
++    <string name="custom_seekbar_default_value_is_set">O valor padrão é definido</string>
++
++    <!-- Icon size -->
++    <string name="icon_size_title">Tamanho do ícone</string>
++
++    <!-- Font size -->
++    <string name="font_size_title">Tamanho da fonte</string>
++
++    <!-- App label - max lines -->
++    <string name="icon_max_lines_title">Linhas máximas para rótulo de aplicativo</string>
++
++    <!-- Hotseat searchbar -->
++    <string name="label_search">Procurar</string>
++    <string name="label_lens">Google Lens</string>
++    <string name="label_voice_search">Pesquisa por voz</string>
++    <string name="dock_music_search_title">Pesquisa de música do Google</string>
++    <string name="dock_music_search_summary">Use a pesquisa de música do Google em vez do Google Assistant ao pressionar o ícone do microfone</string>
++    <string name="dock_search_title">Barra de pesquisa do Google</string>
++    <string name="dock_search_summary">Barra de pesquisa na dock inferior</string>
++    <string name="dock_theme_title">Ícones temáticos</string>
++    <string name="dock_theme_summary">Use ícones temáticos para a barra de pesquisa</string>
++    <string name="search_radius_title">Raio de canto</string>
++
++    <!-- Hotseat Background -->
++    <string name="hotseat_bg_title">Fundo do Hotseat</string>
++    <string name="hotseat_bg_summary">Adicionar plano de fundo translúcido ao dock do aplicativo</string>
++
++    <!-- Wallpaper scrolling -->
++    <string name="allow_wallpaper_scrolling">Rolagem de papel de parede</string>
++    <string name="allow_wallpaper_scrolling_summary">Efeito de rolagem de papel de parede para várias telas</string>
++
++    <!-- Wallpaper zooming -->
++    <string name="allow_wallpaper_zooming">Zoom no papel de parede</string>
++    <string name="allow_wallpaper_zooming_summary">Amplie ou reduza o papel de parede ao usar a gaveta ou aplicativos recentes</string>
++
++    <!-- Homescreen Statusbar -->
++    <string name="show_statusbar_title">Barra de status</string>
++
++    <!-- Top shadow -->
++    <string name="show_top_shadow">Sombra superior</string>
++
++    <!-- Row Height -->
++    <string name="row_height_title">Altura da linha</string>
++    
++    <!-- Background blur -->
++    <string name="background_blur_title">Profundidade do desfoque de fundo</string>
++    <string name="background_blur_summary">Defina o nível de profundidade de desfoque para recentes e gaveta de aplicativos</string>
++
++    <!-- QuickSpace -->
++    <string name="show_quickspace_title">Aspirante a um relance</string>
++    <string name="show_quickspace_summary">Uma cópia do widget de visão geral do Google</string>
++    <string name="show_quickspace_msg_title">Mensagens aleatórias</string>
++    <string name="show_quickspace_msg_summary">Mostrar mensagens aleatórias abaixo rapidamente - alterne a opção caso a mensagem não seja atualizada</string>
++    <string name="extended_quickspace_title">Visão geral estendida</string>
++    <string name="extended_quickspace_summary">Versão estendida do widget de visão geral</string>
++    <string name="abbrev_wday_month_day_no_year" translatable="false">EEEEMMMd</string>
++
++
++    <string-array translatable="false" name="welcome_message_variants">
++        <item>#PegueUmaBanana &#127834;</item>
++        <item>#ComaUmaBanana &#129425;</item>
++        <item>#FiqueSaudável &#127858;</item>
++        <item>#MantenhaSeuSorriso &#127834;</item>
++        <item>Bem-vindo a BananaDroid</item>
++        <item>Aproveite sua banana!</item>
++        <item>Aproveite nossas delícias &#127834;</item>
++    </string-array>
++    
++    <string-array name="quickspace_psa_morning">
++        <item>Aproveite nossas delícias!</item>
++        <item>Escove os dentes com atenção.</item>
++        <item>Comece o dia hidratado!</item>
++        <item>Fazer algum exercício!</item>
++        <item>Estique as coisas!</item>
++        <item>Comece o seu dia com positividade.</item>
++        <item>É de manhã agora.</item>
++        <item>Sempre verifique os níveis de bateria do dispositivo!</item>
++        <item>Não se esqueça de preparar o café da manhã.</item>
++        <item>Escove os dentes com atenção..</item>
++        <item>Respire fundo e saia!</item>
++        <item>Pegue uma banana para começar o dia.</item>
++        <item>Desista dos seus sonhos e morra.</item>
++        <item>Aproveite seu dia.</item>
++        <item>Peide primeiro, faça xixi depois</item>
++        <item>Desfrute de uma xícara de café.</item>
++        <item>Não se esqueça da proteína.</item>
++        <item>Ovos fazem um café da manhã simples e nutritivo.</item>
++        <item>Aproveite seu café da manhã.</item>
++    </string-array>
++    <string-array name="quickspace_psa_noon">
++        <item>Não se esqueça de se manter hidratado!</item>
++        <item>Lembre-se de comer alguns lanches.</item>
++        <item>Os raios UV são mais prejudiciais à tarde.</item>
++        <item>É tarde agora.</item>
++        <item>Coma Banana e Fique Saudável</item>
++        <item>Mantenha o ânimo e sorria</item>
++        <item>Tenha um ótimo dia bananeiro!</item>
++        <item>Não se sobrecarregue, ainda é um longo dia pela frente</item>
++        <item>Faça um sorriso como seu melhor amigo</item>
++        <item>Tente ser um arco-íris na nuvem de alguém</item>
++        <item>Se divirta.</item>
++    </string-array>
++    <string-array name="quickspace_psa_early_evening">
++        <item>Mantenha-se sempre hidratado!</item>
++        <item>8 horas de sono são essenciais.</item>
++        <item>É noite agora.</item>
++        <item>Lembre-se de me carregar completamente antes de dormir.</item>
++        <item>Lembre-se de peidar e soltar</item>
++        <item>É hora de endireitar as pernas</item>
++        <item>Lembre-se de jantar.</item>
++        <item>Peidar todos os dias torna o seu dia mais fácil</item>
++        <item>Aproveite a noite.</item>
++        <item>Desista dos seus sonhos e morra</item>
++        <item>Relax and do some rest.</item>
++    </string-array>
++    <string-array name="quickspace_psa_evening">
++        <item>Não beba muita água antes de dormir.</item>
++        <item>É noite agora.</item>
++        <item>Tente evitar o carregamento durante a noite, se possível.</item>
++        <item>Desista dos seus sonhos e morra</item>
++        <item>Você já fez algum bem hoje?</item>
++        <item>Não se esqueça de escovar os dentes</item>
++        <item>Prepare bem o seu sono</item>
++        <item>Aproveite a noite.</item>
++        <item>Não se esqueça de preparar o seu amanhã</item>
++        <item>Aproveite o seu sono.</item>
++    </string-array>
++    <string-array name="quickspace_psa_midnight">
++        <item>A falta de sono é ruim para sua saúde.</item>
++        <item>Não se esqueça de se manter hidratado.</item>
++        <item>A falta de sono pode quebrar a produção de melatonina.</item>
++        <item>É meia noite agora.</item>
++        <item>Lembre-se de levar em consideração os deveres diários.</item>
++        <item>Você pode ter uma programação importante durante o dia.</item>
++        <item>Não se esqueça de dormir/preparar seu café da manhã.</item>
++        <item>Aproveite a meia-noite.</item>
++        <item>Quando nada está direito... Vá para a esquerda</item>
++        <item>Por favor cuide-se.</item>
++    </string-array>
++    <string-array name="quickspace_psa_random">
++        <item>Obrigado por escolher BananaDroid</item>
++        <item>Bem-vindo amante de banana</item>
++        <item>Tente evitar os raios UV durante o meio-dia.</item>
++        <item>Fique hidratado!</item>
++        <item>Você precisa tomar mais água durante o dia.</item>
++        <item>Rir pode aumentar o fluxo sanguíneo.</item>
++        <item>Chocolate contém antioxidantes.</item>
++        <item>A ansiedade pode piorar ainda mais os cheiros ruins.</item>
++        <item>Comer ovos melhora seus reflexos.</item>
++        <item>Lembre-se de peidar</item>
++        <item>Relaxe sua mente</item>
++        <item>Coma Banana e Fique Saudável</item>
++        <item>Verifique sua lista de tarefas, se tiver uma.</item>
++        <item>Tenha um ótimo dia banana</item>
++        <item>Pronto para pegar algumas bananas?</item>
++        <item>Não se esqueça de ser feliz</item>
++        <item>Escove seus dentes!</item>
++        <item>Está triste? Fique feliz.</item>
++        <item>Beba água.</item>
++        <item>Tente ser um arco-íris na nuvem de alguém</item>
++        <item>Quando nada está direito vá para a esquerda</item>
++        <item>Peidar todos os dias torna o seu dia mais fácil</item>
++        <item>Faça um sorriso como seu melhor amigo</item>
++    </string-array>
++
++    <string name="custom_date_strings">EEE, MMM d</string>
++    <string name="custom_date_strings_extended">EEEE, MMM d</string>
++    
++    <!-- Greetings -->
++    <string name="quickspace_grt_morning">Bom dia.</string>
++    <string name="quickspace_grt_evening">Boa noite.</string>
++    <string name="quickspace_grt_afternoon">Boa tarde.</string>
++    <string name="quickspace_grt_night">Boa noite.</string>
++    <string name="quickspace_grt_midnight">Meia-noite solene.</string>
++    <string name="quickspace_grt_general">Bom dia.</string>
++    <string name="extended_clock_text">É</string>
++    
++    <!-- Suggestions -->
++    <string name="suggestion_pref_screen_title">Sugestões</string>
++    <string name="suggestion_pref_screen_desc">Para todos os aplicativos e sugestões da tela inicial</string>
++
++    <!-- Background opacity -->
++    <string name="background_opacity_title">Opacidade do plano de fundo</string>
++
++    <!-- Recents -->
++    <string name="action_lens">Lens</string>
++
++    <!-- Recents icons -->
++    <string name="recents_screenshot_title">Captura de tela</string>
++    <string name="recents_clear_all_title">Limpar tudo</string>
++    <string name="recents_lens_title">Lens</string>
++
++    <!-- All apps themed icons -->
++    <string name="pref_themed_icons_title">Ícones temáticos</string>
++    <string name="pref_themed_icons_summary">Siga os ícones temáticos usados ​​na tela inicial</string>
++
++    <!-- AppInfo -->
++    <string name="app_info_version_value" translatable="false">%1$s (%2$d)</string>
++    <string name="app_info_source">Fonte</string>
++    <string name="app_info_source_system">Sistema</string>
++    <string name="app_info_last_update">Última atualização</string>
++    <string name="app_info_version">Versão</string>
++    <string name="app_info_more">Mais</string>
++
++    <!-- Icon pack -->
++    <string name="icon_pack_title">Pacote de ícones</string>
++    <string name="icon_pack_default_label">Padrão</string>
++    <string name="icon_pack_add">Instalar mais</string>
++    <string name="icon_pack_no_market">Não há nenhuma loja de aplicativos disponível</string>
++
++    <!-- About info -->
++    <string name="about_app_title" translatable="false">Banana Home</string>
++    <string name="about_app_subtitle">Baseado no AOSP Launcher3</string>
++    <string name="about_app_version">TQ1A.230205.002</string>
++    <string name="about_thanks_cat">Agradecimentos especiais para</string>
++    <string name="about">Sobre</string>
++    <string name="about_summary">Informações sobre a Banana Home</string>
++
++    <!-- App drawer searchbar -->
++    <string name="drawer_searchbar_title">Ativar a barra de pesquisa da gaveta de aplicativos</string>
++    
++    <!-- Memory info -->
++    <string name="meminfo_text">%1$s | %2$s</string>
++    <string name="show_meminfo_title">Mostrar informações de memória</string>
++
++    <!-- Taskbar -->
++    <string name="pref_allow_phone_taskbar_title">Usar barra de tarefas</string>
++    <string name="pref_allow_phone_taskbar_summary">Para abrir e alternar aplicativos em qualquer lugar</string>
++</resources>
+-- 
+2.38.1
+

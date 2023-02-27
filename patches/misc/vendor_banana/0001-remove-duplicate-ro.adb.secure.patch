@@ -1,0 +1,25 @@
+From a9340a2431df16ee8b23d62b27cf58df45a29c23 Mon Sep 17 00:00:00 2001
+From: TheAtt1la <alittauwu@gmail.com>
+Date: Sat, 17 Dec 2022 02:02:43 -0300
+Subject: [PATCH 1/2] remove duplicate ro.adb.secure
+
+---
+ config/prop.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/config/prop.mk b/config/prop.mk
+index f3b56f3..7f1c52a 100644
+--- a/config/prop.mk
++++ b/config/prop.mk
+@@ -4,7 +4,7 @@ ifeq ($(TARGET_BUILD_VARIANT),eng)
+ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
+ else
+ # Enable ADB authentication
+-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
++#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
+ 
+ # Additional props
+ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+-- 
+2.38.1
+
